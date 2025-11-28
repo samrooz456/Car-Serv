@@ -1,0 +1,12 @@
+:root {
+  --red-color: #d81324;
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.text-red{
+  color: var(--red-color);
+}
+.topbar {
+  background-color: #59627725;
+}
