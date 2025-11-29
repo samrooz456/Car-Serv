@@ -20,6 +20,11 @@
 /* about */
 .aboutus{
   position: absolute;
-  top: -20px;
+  top: -30px;
   left: 0%;
+}
+.experience{
+  position: absolute;
+  top: -30px;
+  right: -20px;
 }
