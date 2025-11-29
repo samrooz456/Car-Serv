@@ -7,6 +7,19 @@
 .text-red{
   color: var(--red-color);
 }
+/* topbar */
 .topbar {
-  background-color: #59627725;
+  background-color: #59627773;
+}
+/* navbar */
+.nav-hover ul li a:hover{
+ color: #d81324
+ 
+}
+/* id fact no css */
+/* about */
+.aboutus{
+  position: absolute;
+  top: -20px;
+  left: 0%;
 }
