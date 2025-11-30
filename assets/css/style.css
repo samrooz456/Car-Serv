@@ -28,3 +28,10 @@
   top: -30px;
   right: -20px;
 }
+/* details */
+.detailsomg{
+  background-image: url(../images/carousel-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
