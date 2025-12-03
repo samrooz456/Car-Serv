@@ -7,16 +7,16 @@
 .text-red{
   color: var(--red-color);
 }
-/* topbar */
-.topbar {
-  background-color: #59627773;
+/* details */
+.detailsomg{
+  background-image: url(../images/carousel-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* navbar */
-.nav-hover ul li a:hover{
- color: #d81324
- 
+.aboutus1{
+    font-size: 70px;
 }
-/* id fact no css */
 /* about */
 .aboutus{
   position: absolute;
@@ -28,45 +28,6 @@
   top: -30px;
   right: -20px;
 }
-/* details */
-.detailsomg{
-  background-image: url(../images/carousel-bg-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* fooer */
 footer{
   background-image: url(../images/carousel-bg-1.jpg);
