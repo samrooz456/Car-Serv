@@ -35,8 +35,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
+/* award */
+.awardbg{
+  background-image: url(../images/carousel-bg-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overly{
+  background-color: rgba(0, 0, 0, 0.596);
+  
+}
+.awardform{
+  width: 100%;
+  border: none !important;
+  box-shadow: none !important ;
+}
+.awardform:focus{
+  border: none !important;
+  box-shadow: none !important ;
+  outline: none !important ;
+}
 
 
 
