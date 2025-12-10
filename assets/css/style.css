@@ -56,6 +56,28 @@
   box-shadow: none !important ;
   outline: none !important ;
 }
+.formbtn{
+  background-color: rgb(11, 33, 84);
+}
+/* technitians */
+.tecimg{
+ position: relative;
+}
+
+.imgred{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    opacity: 0;          /* normal state → invisible */
+    transition: 0.3s;    /* smooth hover */
+}
+.tecimg:hover .imgred {
+    opacity: 999;      /* hover par red layer show */
+}
+
 
 
 
