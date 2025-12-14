@@ -7,38 +7,31 @@
   <title>Car-Serv</title>
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <header>
+    <!-- TOP BAR -->
     <div class="topbar py-3 d-none d-lg-block">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7 ">
-            <div class="top-g d-flex gap-4">
-              <div class="text-secondary">
-                <i class="ri-map-pin-2-fill text-red"></i> 123 Street, New
-                York, USA
-              </div>
-              <div class="text-secondary">
-                <i class="ri-time-fill text-red"></i> Mon - Fri : 09.00 AM -
-                09.00 PM
-              </div>
+        <div class="row align-items-center">
+          <div class="col-md-7">
+            <div class="d-flex gap-4 text-secondary">
+              <div><i class="ri-map-pin-2-fill text-danger"></i> 123 Street, New York</div>
+              <div><i class="ri-time-fill text-danger"></i> Mon - Fri : 09.00 AM - 09.00 PM</div>
             </div>
           </div>
-          <div class="col-md-5 ">
-            <div class="d-flex justify-content-end gap-4">
-              <div class="text-secondary"><i class="ri-phone-fill text-red"></i> +012 345 6789</div>
+
+          <div class="col-md-5">
+            <div class="d-flex justify-content-end align-items-center gap-4">
+              <div class="text-secondary"><i class="ri-phone-fill text-danger"></i> +012 345 6789</div>
               <div>
-                <a href="#" class="text-decoration-none"><i
-                    class="ri-twitter-fill text-red border bg-white p-1"></i></a>
-                <a href="#" class="text-decoration-none"><i
-                    class="ri-facebook-fill text-red border bg-white p-1"></i></a>
-                <a href="#" class="text-decoration-none"><i
-                    class="ri-instagram-fill text-red border bg-white p-1"></i></a>
-                <a href="#" class="text-decoration-none"><i
-                    class="ri-linkedin-box-fill text-red border bg-white p-1"></i></a>
+                <a href="#" class="text-decoration-none text-red fs-5"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#" class="text-decoration-none text-red fs-5"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="text-decoration-none text-red fs-5"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="#" class="text-decoration-none text-red fs-5"><i class="ri-skype-fill"></i></i></a>
               </div>
             </div>
           </div>
@@ -46,693 +39,696 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg  py-2">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" data-aos="fade-down" data-aos-duration="1400"
+      data-aos-easing="ease-in-out" data-aos-offset="160">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <h2 class="text-red fw-bolder"><i class="ri-roadster-fill me-3"></i>CarServ</h2>
+        <a class="navbar-brand fw-bolder text-danger fs-2" href="#">
+          <i class="ri-roadster-fill me-2"></i>CarServ
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse nav-hover" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" aria-current="page" href="#"><span class="text-red">Home</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="#">Serives</a>
-            </li>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link fw-bold text-danger" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="./about.html" target="_blank">About</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="./services.html" target="_blank">Services</a></li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Pages
-              </a>
+              <a class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Pages</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
               </ul>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold" href="#">Contact</a>
-            </li>
+            <li class="nav-item me-3"><a class="nav-link fw-bold" href="./contact.html" target="_blank">Contact</a></li>
             <li>
-              <a class="btn btn-danger bg-red fw-bold text-white" href="#">Get A Quote<i
-                  class="ri-arrow-right-long-fill ms-2"></i></a>
+              <a class="btn btn-danger fw-bold text-white" href="#">
+                Get A Quote <i class="ri-arrow-right-long-fill ms-1"></i>
+              </a>
             </li>
-
+          </ul>
         </div>
-
       </div>
     </nav>
-  </header>
-  <!-- main-section -->
-  <main>
-    <section id="crousel">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
 
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <img src="./assets/images/carousel-bg-1.jpg" class="d-block w-100" alt="">
+    <!-- main-section -->
+    <main>
+      <section id="crousel">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
 
-            <!-- Black Overlay -->
-            <div class="carousel-overlay"></div>
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="./assets/images/carousel-bg-1.jpg" class="d-block w-100" alt="">
 
-            <div class="container">
-              <div class="row ">
+              <!-- Black Overlay -->
+              <div class="carousel-overlay"></div>
 
-                <!-- Icon Column -->
-                <div class="carousel-top-icon col-md-4 d-none d-lg-block">
-                  <img src="./assets/images/carousel-1.png" class="img-fluid" style="max-width:400px;">
+              <div class="container">
+                <div class="row ">
+
+                  <!-- Icon Column -->
+                  <div class="carousel-top-icon col-md-4 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1400"
+                    data-aos-easing="ease-in-out" data-aos-offset="160">
+                    <img src="./assets/images/carousel-1.png" class="img-fluid" style="max-width:400px;">
+                  </div>
+
+                  <!-- Content Column -->
+                  <div class="carousel-content col-md-8 fs-md-1 ">
+                    <h6 class="text-red fw-bold">// Our Services //</h6>
+                    <h2 class="text-white fs-1 fw-bolder mb-4">Qualified Car Repair <br> Service Center</h2>
+                    <a href="#" class="text-white text-decoration-none bg-red py-3 px-5 fw-bolder">Learn More</a>
+                  </div>
+
                 </div>
+              </div>
 
-                <!-- Content Column -->
-                <div class="carousel-content col-md-8 fs-md-1 ">
-                  <h6 class="text-red fw-bold">// Our Services //</h6>
-                  <h2 class="text-white fs-1 fw-bolder mb-4">Qualified Car Repair <br> Service Center</h2>
-                  <a href="#" class="text-white text-decoration-none bg-red py-3 px-5 fw-bolder">Learn More</a>
+
+            </div>
+
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="./assets/images/carousel-bg-2.jpg" class="d-block w-100" alt="">
+
+              <div class="carousel-overlay"></div>
+
+              <div class="container">
+                <div class="row ">
+
+                  <!-- Icon Column -->
+                  <div class="carousel-top-icon col-md-4 d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1400"
+                    data-aos-easing="ease-in-out" data-aos-offset="160">
+                    <img src="./assets/images/carousel-2.png" class="img-fluid" style="max-width:400px;">
+                  </div>
+
+                  <!-- Content Column -->
+                  <div class="carousel-content col-md-8 fs-md-1 ">
+                    <h6 class="text-red fw-bold">// Our Services //</h6>
+                    <h2 class="text-white fs-1 fw-bolder mb-4">Qualified Car Repair <br> Service Center</h2>
+                    <a href="#" class="text-white text-decoration-none bg-red py-3 px-5 fw-bolder">Learn More</a>
+                  </div>
+
                 </div>
-
               </div>
             </div>
 
 
+
           </div>
 
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <img src="./assets/images/carousel-bg-2.jpg" class="d-block w-100" alt="">
-
-            <div class="carousel-overlay"></div>
-
-            <div class="container">
-              <div class="row ">
-
-                <!-- Icon Column -->
-                <div class="carousel-top-icon col-md-4 d-none d-lg-block">
-                  <img src="./assets/images/carousel-2.png" class="img-fluid" style="max-width:400px;">
-                </div>
-
-                <!-- Content Column -->
-                <div class="carousel-content col-md-8 fs-md-1 ">
-                  <h6 class="text-red fw-bold">// Our Services //</h6>
-                  <h2 class="text-white fs-1 fw-bolder mb-4">Qualified Car Repair <br> Service Center</h2>
-                  <a href="#" class="text-white text-decoration-none bg-red py-3 px-5 fw-bolder">Learn More</a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
 
         </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-
-      </div>
-
-    </section>
-    <!-- fact -->
-    <section id="fact" class="py-5">
-      <div class="container">
-        <div class="row g-3">
-          <div class="col-md-4 ">
-            <div class="d-flex gap-3 py-5 px-3 border border-danger">
-              <div class="fs-1 text-red "><i class="ri-star-smile-fill"></i></div>
-              <div class="pt-3">
-                <h3 class="fs-5 fw-bold mb-3">Quality Servicing</h3>
-                <p class="text-secondary mb-3">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                <a href="#" class="text-white text-decoration-none bg-red py-1 px-2  ">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="d-flex gap-3 py-5 px-3 border border-danger">
-              <div class="fs-1 text-red "><i class="ri-car-washing-fill"></i></i></div>
-              <div class="pt-3">
-                <h3 class="fs-5 fw-bold mb-3">Expert Workers</h3>
-                <p class="text-secondary mb-3">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                <a href="#" class="text-white text-decoration-none bg-red py-1 px-2  ">Read More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 ">
-            <div class="d-flex gap-3 py-5 px-3 border border-danger">
-              <div class="fs-1 text-red "><i class="ri-settings-4-fill"></i></div>
-              <div class="pt-3">
-                <h3 class="fs-5 fw-bold mb-3">Modern Equipment</h3>
-                <p class="text-secondary mb-3">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                <a href="#" class="text-white text-decoration-none bg-red py-1 px-2  ">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row align-items-stretch g-5">
-          <div class="col-xl-6 ">
-            <div class="position-relative"><img class="img-fluid w-100 h-100" src="./assets/images/about.jpg" alt="">
-              <div class="experience  bg-secondary bg-opacity-25 px-5 py-4 fs-5 text-white fw-bold"><span
-                  class="fs-1 fw-bold text-white">15</span> Years <br>
-                Experience</div>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="position-relative ms-3">
-              <h6 class="aboutus text-red fw-bold">// ABOUT US //</h6>
-              <h2 class="text-black fw-bolder"><span class="text-red fw-bolder">CarServ</span> Is The Best Place For
-                Your Auto Care</h2>
-              <p class="mt-3 lh-lg">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
-                eos.
-                Clita erat
-                ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet Tempor erat elitr rebum
-                at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                Clita erat
-                ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-
-              <div class="d-flex gap-3 ">
-                <div class="fw-bold fs-5 border bg-body-secondary mt-1 d-flex justify-content-center align-items-center"
-                  style="height: 45px; width: 45px;">01</div>
-                <div>
-                  <h4 class="fw-bold fs-5 mb-1">Professional & Expert</h4>
-                  <p>Diam dolor diam ipsum sit amet diam et eos</p>
-                </div>
-
-              </div>
-              <div class="d-flex gap-3 ">
-                <div class="fw-bold fs-5 border bg-body-secondary mt-1 d-flex justify-content-center align-items-center"
-                  style="height: 45px; width: 45px;">02</div>
-                <div>
-                  <h4 class="fw-bold fs-5 mb-1">Quality Servicing Center</h4>
-                  <p>Diam dolor diam ipsum sit amet diam et eos</p>
-                </div>
-
-              </div>
-              <div class="d-flex gap-3 ">
-                <div class="fw-bold fs-5 border bg-body-secondary mt-1 d-flex justify-content-center align-items-center"
-                  style="height: 45px; width: 45px;">03</div>
-                <div>
-                  <h4 class="fw-bold fs-5 mb-1">Awards Winning Workers</h4>
-                  <p>Diam dolor diam ipsum sit amet diam et eos</p>
-                </div>
-
-              </div>
-              <a class="btn btn-danger bg-red fw-bold text-white py-4 px-5 fs-6" href="#">Read More<i
-                  class="ri-arrow-right-long-fill ms-2"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- details -->
-    <section id="details" class="detailsomg">
-      <div class="overly bg-black bg-opacity-75">
-        <div class="container py-5">
+      </section>
+      <!-- fact -->
+      <section id="fact" class="py-5">
+        <div class="container">
           <div class="row g-3">
-            <div class="col-md-3">
-              <div class="text-center">
-                <i class="ri-check-fill text-white fs-1 fw-bolder text-center"></i>
-                <h2 class="text-white fw-bold">1234</h2>
-                <p class="text-white">Years Experience</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="text-center">
-                <i class="ri-globe-fill text-white fs-1 fw-bolder text-center"></i>
-                <h2 class="text-white fw-bold">1234</h2>
-                <p class="text-white">Expert Technicians</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="text-center">
-                <i class="ri-parking-box-fill text-white fs-1 fw-bolder text-center"></i>
-                <h2 class="text-white fw-bold">1234</h2>
-                <p class="text-white">Satisfied Clients</p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="text-center">
-                <i class="ri-luggage-deposit-fill text-white fs-1 fw-bolder text-center"></i>
-                <h2 class="text-white fw-bold">1234</h2>
-                <p class="text-white">Compleate Projects</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="services" class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h6 class="text-red fw-bold">// Our Services //</h6>
-          <h2 class="fw-bolder fs-1">Explore Our Services</h2>
-        </div>
-        <div class="row g-3">
-          <div class="col-xl-4">
-            <div>
-              <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3"><i
-                  class="ri-ship-2-fill me-2 text-white"></i>Diagnostic Test</button>
-              <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3"><i
-                  class="ri-ship-2-fill me-2  text-white"></i>Engine Srvicing</button>
-              <button class="btn btn-danger h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3"><i
-                  class="ri-ship-2-fill  me-2 text-white"></i>Tires Rpcement</button>
-
-              <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3 "><i
-                  class="ri-ship-2-fill me-2 text-white"></i>Oil Changiiiiing</button>
-              <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 "><i
-                  class="ri-ship-2-fill me-2 text-white"></i>Oil Changiiiiing</button>
-
-            </div>
-          </div>
-          <div class="col-xl-4">
-            <div>
-              <img class="img-fluid h-100 w-100 " src="./assets/images/service-2.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-xl-4">
-            <div>
-              <h3 class="fw-bold">15 Years Of Experience In Auto Servicing</h3>
-              <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.Tempor erat elitr rebum at clita. Diam
-                dolor diam ipsum sit.Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
-                et eos. Clita erat
-                ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat.</p>
-              <p class="mb-0"><i class="ri-check-line fw-bolder text-success fs-4 me-3"></i>Quality
-                Servicing</p>
-              <p class="mb-0"><i class="ri-check-line fw-bolder text-success fs-4 me-3"></i>Expert Workers</p>
-              <p class="mb-0"><i class="ri-check-line fw-bolder text-success fs-4 me-3"></i>Modern Equipment</p>
-              <a class="mt-2 btn btn-danger bg-red fw-bold text-white py-4 px-5 fs-6" href="#">Read More<i
-                  class="ri-arrow-right-long-fill ms-2"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <section id="award" class="py-5">
-      <div class="awardbg">
-        <div class="overly">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="py-5">
-                  <h2 class="fw-bolder text-white">Certified and Award Winning Car Repair Service Provider</h2>
-                  <p class="text-white mt-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum.
-                    Dolor ea et dolore et at
-                    sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod
-                    et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata
-                    takimata sanctus sed.Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor
-                    ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero
-                    ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.</p>
+            <div class="col-md-4 ">
+              <div class="d-flex gap-3 py-5 px-3 border border-danger" data-aos="fade-up" data-aos-delay="0">
+                <div class="fs-1 text-red "><i class="ri-star-smile-fill"></i></div>
+                <div class="pt-3">
+                  <h3 class="fs-5 fw-bold mb-3">Quality Servicing</h3>
+                  <p class="text-secondary mb-3">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                  <a href="#" class="text-white text-decoration-none bg-red py-1 px-2  ">Read More</a>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="bg-red py-5 h-100">
-                  <div class="container">
-                    <h2 class="text-white fw-bolder fs-1 text-center mb-3">Book For A Service</h2>
-                    <div class="row mb-2">
-                      <div class="col-md-6">
-                        <div class="">
-                          <input class="form-control-lg rounded-0 awardform fs-6" placeholder="your name" type="text">
+            </div>
+            <div class="col-md-4 ">
+              <div class="d-flex gap-3 py-5 px-3 border border-danger" data-aos="fade-up" data-aos-delay="200">
+                <div class="fs-1 text-red "><i class="ri-car-washing-fill"></i></i></div>
+                <div class="pt-3">
+                  <h3 class="fs-5 fw-bold mb-3">Expert Workers</h3>
+                  <p class="text-secondary mb-3">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                  <a href="#" class="text-white text-decoration-none bg-red py-1 px-2  ">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="d-flex gap-3 py-5 px-3 border border-danger" data-aos="fade-up" data-aos-delay="400">
+                <div class="fs-1 text-red "><i class="ri-settings-4-fill"></i></div>
+                <div class="pt-3">
+                  <h3 class="fs-5 fw-bold mb-3">Modern Equipment</h3>
+                  <p class="text-secondary mb-3">Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                  <a href="#" class="text-white text-decoration-none bg-red py-1 px-2  ">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-stretch g-5">
+            <div class="col-xl-6 ">
+              <div class="position-relative"><img class="img-fluid w-100 h-100" src="./assets/images/about.jpg" alt="">
+                <div class="experience  bg-secondary bg-opacity-25 px-5 py-4 fs-5 text-white fw-bold"><span
+                    class="fs-1 fw-bold text-white">15</span> Years <br>
+                  Experience</div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="position-relative ms-3">
+                <h6 class="aboutus text-red fw-bold">// ABOUT US //</h6>
+                <h2 class="text-black fw-bolder"><span class="text-red fw-bolder">CarServ</span> Is The Best Place For
+                  Your Auto Care</h2>
+                <p class="mt-3 lh-lg">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                  et
+                  eos.
+                  Clita erat
+                  ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet Tempor erat elitr
+                  rebum
+                  at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                  Clita erat
+                  ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+                <div class="d-flex gap-3 ">
+                  <div
+                    class="fw-bold fs-5 border bg-body-secondary mt-1 d-flex justify-content-center align-items-center"
+                    style="height: 45px; width: 45px;">01</div>
+                  <div>
+                    <h4 class="fw-bold fs-5 mb-1">Professional & Expert</h4>
+                    <p>Diam dolor diam ipsum sit amet diam et eos</p>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-3 ">
+                  <div
+                    class="fw-bold fs-5 border bg-body-secondary mt-1 d-flex justify-content-center align-items-center"
+                    style="height: 45px; width: 45px;">02</div>
+                  <div>
+                    <h4 class="fw-bold fs-5 mb-1">Quality Servicing Center</h4>
+                    <p>Diam dolor diam ipsum sit amet diam et eos</p>
+                  </div>
+
+                </div>
+                <div class="d-flex gap-3 ">
+                  <div
+                    class="fw-bold fs-5 border bg-body-secondary mt-1 d-flex justify-content-center align-items-center"
+                    style="height: 45px; width: 45px;">03</div>
+                  <div>
+                    <h4 class="fw-bold fs-5 mb-1">Awards Winning Workers</h4>
+                    <p>Diam dolor diam ipsum sit amet diam et eos</p>
+                  </div>
+
+                </div>
+                <a class="btn btn-danger bg-red fw-bold text-white py-4 px-5 fs-6" href="#">Read More<i
+                    class="ri-arrow-right-long-fill ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- details -->
+      <section id="details" class="detailsomg">
+        <div class="overly bg-black bg-opacity-75">
+          <div class="container py-5">
+            <div class="row g-3">
+              <div class="col-md-3">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
+                  <i class="ri-check-fill text-white fs-1 fw-bolder text-center"></i>
+                  <h2 class="text-white fw-bold">1234</h2>
+                  <p class="text-white">Years Experience</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                  <i class="ri-globe-fill text-white fs-1 fw-bolder text-center"></i>
+                  <h2 class="text-white fw-bold">1234</h2>
+                  <p class="text-white">Expert Technicians</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                  <i class="ri-parking-box-fill text-white fs-1 fw-bolder text-center"></i>
+                  <h2 class="text-white fw-bold">1234</h2>
+                  <p class="text-white">Satisfied Clients</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="text-center" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                  <i class="ri-luggage-deposit-fill text-white fs-1 fw-bolder text-center"></i>
+                  <h2 class="text-white fw-bold">1234</h2>
+                  <p class="text-white">Compleate Projects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h6 class="text-red fw-bold">// Our Services //</h6>
+            <h2 class="fw-bolder fs-1">Explore Our Services</h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-xl-4">
+              <div>
+                <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3"><i
+                    class="ri-ship-2-fill me-2 text-white"></i>Diagnostic Test</button>
+                <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3"><i
+                    class="ri-ship-2-fill me-2  text-white"></i>Engine Srvicing</button>
+                <button class="btn btn-danger h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3"><i
+                    class="ri-ship-2-fill  me-2 text-white"></i>Tires Rpcement</button>
+
+                <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 mb-3 "><i
+                    class="ri-ship-2-fill me-2 text-white"></i>Oil Changiiiiing</button>
+                <button class="btn btn-secondary h-100 w-100 fw-bold fs-3 border-0 rounded-0 py-3 "><i
+                    class="ri-ship-2-fill me-2 text-white"></i>Oil Changiiiiing</button>
+
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div>
+                <img class="img-fluid h-100 w-100 " src="./assets/images/service-2.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-xl-4">
+              <div>
+                <h3 class="fw-bold">15 Years Of Experience In Auto Servicing</h3>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.Tempor erat elitr rebum at clita. Diam
+                  dolor diam ipsum sit.Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam
+                  et eos. Clita erat
+                  ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat.</p>
+                <p class="mb-0"><i class="ri-check-line fw-bolder text-success fs-4 me-3"></i>Quality
+                  Servicing</p>
+                <p class="mb-0"><i class="ri-check-line fw-bolder text-success fs-4 me-3"></i>Expert Workers</p>
+                <p class="mb-0"><i class="ri-check-line fw-bolder text-success fs-4 me-3"></i>Modern Equipment</p>
+                <a class="mt-2 btn btn-danger bg-red fw-bold text-white py-4 px-5 fs-6" href="#">Read More<i
+                    class="ri-arrow-right-long-fill ms-2"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="award" class="py-5">
+        <div class="awardbg">
+          <div class="overly">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="py-5">
+                    <h2 class="fw-bolder text-white">Certified and Award Winning Car Repair Service Provider</h2>
+                    <p class="text-white mt-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum.
+                      Dolor ea et dolore et at
+                      sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore
+                      eirmod
+                      et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et.
+                      Takimata
+                      takimata sanctus sed.Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor
+                      ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero
+                      ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="bg-red py-5 h-100" data-aos="zoom-in" data-aos-duration="1400"
+                    data-aos-easing="ease-in-out" data-aos-offset="160">
+                    <div class="container">
+                      <h2 class="text-white fw-bolder fs-1 text-center mb-3">Book For A Service</h2>
+                      <div class="row mb-2">
+                        <div class="col-md-6">
+                          <div class="">
+                            <input class="form-control-lg rounded-0 awardform fs-6" placeholder="your name" type="text">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div>
+                            <input class="form-control-lg rounded-0 awardform fs-6" placeholder="your name" type="text">
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="mb-2">
+                            <select name="" class="form-select-lg awardform rounded-0" id="">
+                              <option selected>selected</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="mb-2">
+                            <input class="form-control-lg rounded-0 awardform fs-6" placeholder="" type="date">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
                         <div>
-                          <input class="form-control-lg rounded-0 awardform fs-6" placeholder="your name" type="text">
+                          <textarea rows="3" class="rounded-0 awardform p-2" placeholder="special request" name=""
+                            id=""></textarea>
                         </div>
                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="mb-2">
-                          <select name="" class="form-select-lg awardform rounded-0" id="">
-                            <option selected>selected</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                          </select>
+                      <div class="col-md-12">
+                        <div>
+                          <button class="w-100 rounded-0 awardform py-3 fw-bolder text-white formbtn mt-2">Book
+                            Now</button>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="mb-2">
-                          <input class="form-control-lg rounded-0 awardform fs-6" placeholder="" type="date">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div>
-                        <textarea rows="3" class="rounded-0 awardform p-2" placeholder="special request" name=""
-                          id=""></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div>
-                        <button class="w-100 rounded-0 awardform py-3 fw-bolder text-white formbtn mt-2">Book
-                          Now</button>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
 
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section id="tehnicians" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h6 class="text-red fw-bold">// Our Technicians //</h6>
+            <h2 class="fw-bolder fs-1">Our Expert Technicians</h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-3" data-aos-duration="1200" data-aos-delay="0">
+              <div class="position-relative overflow-hidden team-card">
+
+                <img src="./assets/images/team-1.jpg" class="img-fluid w-100" alt="">
+
+                <!-- RED OVERLAY -->
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="text-center bg-secondary bg-opacity-25 py-3">
+                <h4 class="fw-bold mb-0">Sir Jhonny</h4>
+                <p class="mb-0">Designation</p>
+              </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+              <div class="position-relative overflow-hidden team-card">
+
+                <img src="./assets/images/team-2.jpg" class="img-fluid w-100" alt="">
+
+                <!-- RED OVERLAY -->
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="text-center bg-secondary bg-opacity-25 py-3">
+                <h4 class="fw-bold mb-0">Sir Jhonny</h4>
+                <p class="mb-0">Designation</p>
+              </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+              <div class="position-relative overflow-hidden team-card">
+
+                <img src="./assets/images/team-3.jpg" class="img-fluid w-100" alt="">
+
+                <!-- RED OVERLAY -->
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="text-center bg-secondary bg-opacity-25 py-3">
+                <h4 class="fw-bold mb-0">Sir Jhonny</h4>
+                <p class="mb-0">Designation</p>
+              </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+              <div class="position-relative overflow-hidden team-card">
+
+                <img src="./assets/images/team-4.jpg" class="img-fluid w-100" alt="">
+
+                <!-- RED OVERLAY -->
+                <div
+                  class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+
+                  <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="text-center bg-secondary bg-opacity-25 py-3">
+                <h4 class="fw-bold mb-0">Sir Jhonny</h4>
+                <p class="mb-0">Designation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="clients" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h6 class="text-red fw-bold">// Testimonial //</h6>
+            <h2 class="fw-bolder fs-1">Our Clients Say!</h2>
+          </div>
+          <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+              <!-- SLIDE 1 -->
+              <div class="carousel-item active">
+                <div class="row text-center">
+
+                  <div class="col-md-4">
+                    <img src="./assets/images/team-1.jpg" class="team-img">
+                    <h5 class="fw-bold mb-1">Sir John</h5>
+                    <h6>Designer</h6>
+                    <p class="bg-red p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                      cupiditate
+                      commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque
+                      soluta</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./assets/images/team-2.jpg" class="team-img">
+                    <h5 class="fw-bold mb-1">Sir John</h5>
+                    <h6>Designer</h6>
+                    <p class="bg-red p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                      cupiditate
+                      commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque
+                      soluta</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./assets/images/team-3.jpg" class="team-img">
+                    <h5 class="fw-bold mb-1">Sir John</h5>
+                    <h6>Designer</h6>
+                    <p class="bg-red p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                      cupiditate
+                      commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque
+                      soluta</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- SLIDE 2 -->
+              <div class="carousel-item">
+                <div class="row text-center">
+
+                  <div class="col-md-4">
+                    <img src="./assets/images/team-4.jpg" class="team-img">
+                    <h5 class="fw-bold mb-1">Sir John</h5>
+                    <h6>Designer</h6>
+                    <p class="bg-red p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                      cupiditate
+                      commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque
+                      soluta</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./assets/images/team-2.jpg" class="team-img">
+                    <h5 class="fw-bold mb-1">Sir John</h5>
+                    <h6>Designer</h6>
+                    <p class="bg-red p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                      cupiditate
+                      commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque
+                      soluta</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="./assets/images/team-1.jpg" class="team-img">
+                    <h5 class="fw-bold mb-1">Sir John</h5>
+                    <h6>Designer</h6>
+                    <p class="bg-red p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+                      cupiditate
+                      commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque
+                      soluta</p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 🔹 CUSTOM SQUARE INDICATORS -->
+          <div class="d-flex justify-content-center gap-2 mt-3">
+
+            <!-- 1 2 3 → SLIDE 1 -->
+            <button class="sq-indicator active" data-bs-target="#teamCarousel" data-bs-slide-to="0">1</button>
+            <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="0">2</button>
+            <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="0">3</button>
+
+            <!-- 4 5 6 → SLIDE 2 -->
+            <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="1">4</button>
+            <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="1">5</button>
+            <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="1">6</button>
+
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="py-5 bg-black bg-opacity-75">
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <div>
+                <h2 class="fs-4 mb-3 fw-bolder  text-white">Address</h2>
+                <p class="text-white"><i class="ri-map-pin-2-fill me-2"></i>123 Street, New York, USA</p>
+                <p class="text-white"><i class="ri-phone-fill me-2"></i>+012 345 67890</p>
+                <p class="text-white"><i class="ri-mail-lock-fill me-2"></i>info@example.com</p>
+                <div class="d-flex gap-1">
+                  <a href="#"
+                    class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
+                    style="width: 40px; height: 40px;">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+
+                  <a href="#"
+                    class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
+                    style="width: 40px; height: 40px;">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+
+                  <a href="#"
+                    class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
+                    style="width: 40px; height: 40px;">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+
+                  <a href="#"
+                    class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
+                    style="width: 40px; height: 40px;">
+                    <i class="ri-youtube-fill"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div>
+                <h6 class="fs-4 mb-4 fw-bolder  text-white">Opening Hours</h6>
+                <ul class="footer-links list-unstyled">
+                  <li class="mb-2 text-white fw-bold">Monday - Friday:
+                  </li>
+                  <li class="mb-4 text-white">09.00 AM - 09.00 PM
+                  </li>
+                  <li class="mb-2 text-white fw-bold">Saturday - Sunday:</li>
+                  <li class="mb-2 text-white">09.00 AM - 12.00 PM</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div>
+                <h6 class="fs-4 mb-3 fw-bolder  text-white">Services</h6>
+                <ul class="footer-links list-unstyled">
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Diagnostic Test</a>
+                  </li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Engine Servicing</a>
+                  </li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Tires Replacement</a>
+                  </li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Oil Changing</a>
+                  </li>
+                  <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Vacuam Cleaning</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div>
+                <h6 class="fs-4 mb-3 fw-bolder  text-white">Newsletter</h6>
+                <p class="text-white">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="position-relative">
+                  <input type="email" class="form-control py-3 p-2 " placeholder="Your E-mail">
+                  <button class="btn btn-danger bg-red rounded-0 fw-bold signbtn">Sign Up</button>
+                </div>
+              </div>
             </div>
 
           </div>
         </div>
-
       </div>
-    </section>
-    <section id="tehnicians" class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h6 class="text-red fw-bold">// Our Technicians //</h6>
-          <h2 class="fw-bolder fs-1">Our Expert Technicians</h2>
-        </div>
-        <div class="row g-3">
-          <div class="col-md-3">
-            <div class="position-relative overflow-hidden team-card">
-
-              <img src="./assets/images/team-1.jpg" class="img-fluid w-100" alt="">
-
-              <!-- RED OVERLAY -->
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-facebook-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-twitter-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-instagram-fill"></i>
-                </a>
-
-              </div>
-            </div>
-
-            <div class="text-center bg-secondary bg-opacity-25 py-3">
-              <h4 class="fw-bold mb-0">Sir Jhonny</h4>
-              <p class="mb-0">Designation</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="position-relative overflow-hidden team-card">
-
-              <img src="./assets/images/team-2.jpg" class="img-fluid w-100" alt="">
-
-              <!-- RED OVERLAY -->
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-facebook-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-twitter-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-instagram-fill"></i>
-                </a>
-
-              </div>
-            </div>
-
-            <div class="text-center bg-secondary bg-opacity-25 py-3">
-              <h4 class="fw-bold mb-0">Sir Jhonny</h4>
-              <p class="mb-0">Designation</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="position-relative overflow-hidden team-card">
-
-              <img src="./assets/images/team-3.jpg" class="img-fluid w-100" alt="">
-
-              <!-- RED OVERLAY -->
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-facebook-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-twitter-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-instagram-fill"></i>
-                </a>
-
-              </div>
-            </div>
-
-            <div class="text-center bg-secondary bg-opacity-25 py-3">
-              <h4 class="fw-bold mb-0">Sir Jhonny</h4>
-              <p class="mb-0">Designation</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="position-relative overflow-hidden team-card">
-
-              <img src="./assets/images/team-4.jpg" class="img-fluid w-100" alt="">
-
-              <!-- RED OVERLAY -->
-              <div
-                class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center gap-2 overlay">
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-facebook-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-twitter-fill"></i>
-                </a>
-
-                <a href="#" class="icon d-flex justify-content-center align-items-center text-decoration-none">
-                  <i class="ri-instagram-fill"></i>
-                </a>
-
-              </div>
-            </div>
-
-            <div class="text-center bg-secondary bg-opacity-25 py-3">
-              <h4 class="fw-bold mb-0">Sir Jhonny</h4>
-              <p class="mb-0">Designation</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="clients" class="py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <h6 class="text-red fw-bold">// Testimonial //</h6>
-          <h2 class="fw-bolder fs-1">Our Clients Say!</h2>
-        </div>
-        <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-
-            <!-- SLIDE 1 -->
-            <div class="carousel-item active">
-              <div class="row text-center">
-
-                <div class="col-md-4">
-                  <img src="./assets/images/team-1.jpg" class="team-img">
-                  <h5 class="fw-bold mb-1">Sir John</h5>
-                  <h6>Designer</h6>
-                  <p class="team-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate
-                    commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque soluta
-                    necessitatibus in blanditiis expedita tenetur.</p>
-                </div>
-
-                <div class="col-md-4">
-                  <img src="./assets/images/team-2.jpg" class="team-img">
-                  <h5 class="fw-bold mb-1">Sir John</h5>
-                  <h6>Designer</h6>
-                  <p class="team-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate
-                    commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque soluta
-                    necessitatibus in blanditiis expedita tenetur.</p>
-                </div>
-
-                <div class="col-md-4">
-                  <img src="./assets/images/team-3.jpg" class="team-img">
-                  <h5 class="fw-bold mb-1">Sir John</h5>
-                  <h6>Designer</h6>
-                  <p class="team-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate
-                    commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque soluta
-                    necessitatibus in blanditiis expedita tenetur.</p>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- SLIDE 2 -->
-            <div class="carousel-item">
-              <div class="row text-center">
-
-                <div class="col-md-4">
-                  <img src="./assets/images/team-4.jpg" class="team-img">
-                  <h5 class="fw-bold mb-1">Sir John</h5>
-                  <h6>Designer</h6>
-                  <p class="team-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate
-                    commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque soluta
-                    necessitatibus in blanditiis expedita tenetur.</p>
-                </div>
-
-                <div class="col-md-4">
-                  <img src="./assets/images/team-2.jpg" class="team-img">
-                  <h5 class="fw-bold mb-1">Sir John</h5>
-                  <h6>Designer</h6>
-                  <p class="team-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate
-                    commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque soluta
-                    necessitatibus in blanditiis expedita tenetur.</p>
-                </div>
-
-                <div class="col-md-4">
-                  <img src="./assets/images/team-1.jpg" class="team-img">
-                  <h5 class="fw-bold mb-1">Sir John</h5>
-                  <h6>Designer</h6>
-                  <p class="team-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis cupiditate
-                    commodi totam eaque quaerat fuga reiciendis ad repellat laborum, ipsam nam. Eaque quo cumque soluta
-                    necessitatibus in blanditiis expedita tenetur.</p>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- 🔹 CUSTOM SQUARE INDICATORS -->
-        <div class="d-flex justify-content-center gap-2 mt-3">
-
-          <!-- 1 2 3 → SLIDE 1 -->
-          <button class="sq-indicator active" data-bs-target="#teamCarousel" data-bs-slide-to="0">1</button>
-          <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="0">2</button>
-          <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="0">3</button>
-
-          <!-- 4 5 6 → SLIDE 2 -->
-          <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="1">4</button>
-          <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="1">5</button>
-          <button class="sq-indicator" data-bs-target="#teamCarousel" data-bs-slide-to="1">6</button>
-
-        </div>
-
-
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="py-5 bg-black bg-opacity-75">
-      <div class="container">
-        <div class="row g-3">
-          <div class="col-md-3">
-            <div>
-              <h2 class="fs-4 mb-3 fw-bolder  text-white">Address</h2>
-              <p class="text-white"><i class="ri-map-pin-2-fill me-2"></i>123 Street, New York, USA</p>
-              <p class="text-white"><i class="ri-phone-fill me-2"></i>+012 345 67890</p>
-              <p class="text-white"><i class="ri-mail-lock-fill me-2"></i>info@example.com</p>
-              <div class="d-flex gap-1">
-                <a href="#"
-                  class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
-                  style="width: 40px; height: 40px;">
-                  <i class="ri-facebook-fill"></i>
-                </a>
-
-                <a href="#"
-                  class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
-                  style="width: 40px; height: 40px;">
-                  <i class="ri-instagram-fill"></i>
-                </a>
-
-                <a href="#"
-                  class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
-                  style="width: 40px; height: 40px;">
-                  <i class="ri-twitter-fill"></i>
-                </a>
-
-                <a href="#"
-                  class="aicon text-decoration-none fs-4 d-flex justify-content-center align-items-center bg-black text-white rounded-circle border border-white"
-                  style="width: 40px; height: 40px;">
-                  <i class="ri-youtube-fill"></i>
-                </a>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div>
-              <h6 class="fs-4 mb-4 fw-bolder  text-white">Opening Hours</h6>
-              <ul class="footer-links list-unstyled">
-                <li class="mb-2 text-white fw-bold">Monday - Friday:
-                </li>
-                <li class="mb-4 text-white">09.00 AM - 09.00 PM
-                </li>
-                <li class="mb-2 text-white fw-bold">Saturday - Sunday:</li>
-                <li class="mb-2 text-white">09.00 AM - 12.00 PM</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div>
-              <h6 class="fs-4 mb-3 fw-bolder  text-white">Services</h6>
-              <ul class="footer-links list-unstyled">
-                <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Diagnostic Test</a>
-                </li>
-                <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Engine Servicing</a>
-                </li>
-                <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Tires Replacement</a>
-                </li>
-                <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Oil Changing</a>
-                </li>
-                <li class="mb-2"><a href="#" class="text-white text-decoration-none dia ">Vacuam Cleaning</a>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div>
-              <h6 class="fs-4 mb-3 fw-bolder  text-white">Newsletter</h6>
-              <p class="text-white">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-              <div class="position-relative">
-                <input type="email" class="form-control py-3 p-2 " placeholder="Your E-mail">
-                <button class="btn btn-danger bg-red rounded-0 fw-bold signbtn">Sign Up</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

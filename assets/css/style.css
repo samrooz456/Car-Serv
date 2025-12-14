@@ -7,15 +7,25 @@
 .text-red{
   color: var(--red-color);
 }
-/* topbar */
 .topbar {
-  background-color: #59627773;
+  background: #f8f9fa;
 }
-/* navbar */
-.nav-hover ul li a:hover{
- color: #d81324
- 
+
+/* sticky navbar topbar ke baad stick hogi */
+.navbar.sticky-top {
+  top: 0;
+  z-index: 1020;
 }
+/* Nav links hover color */
+.navbar .nav-item .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color:#d81324 !important;
+}
+
+
 .carousel-item {
   position: relative;
 }
@@ -142,18 +152,28 @@
   color: #000;
   font-weight: bold;
   transition: 0.3s;
-}
-
-.sq-indicator:hover{
-  background: #0d6efd;
-  color: #fff;
-}
-
-.sq-indicator.active{
-  background: red;
+   background:#d81324;
   color: white;
 }
 
+.sq-indicator:hover{
+  background:#f70418;
+  color: rgb(27, 27, 27);
+}
+
+/* .sq-indicator.active{
+  background:#d81324;
+  color: white;
+} */
+ .detailsomg{
+  background-image: url(../images/carousel-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutus1{
+    font-size: 70px;
+}
 
 
 
